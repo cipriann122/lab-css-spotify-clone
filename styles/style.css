@@ -23,7 +23,8 @@ White: #FFF
 /* General styling */
 body {
   font-family: "Roboto", sans-serif;
-  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header styling */
@@ -32,9 +33,10 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  position: fixed;
+  position: sticky;
   z-index: 1;
   width: 100%;
+  top: 0;
 }
 
 .spotify-logo {
@@ -55,4 +57,34 @@ nav ul {
 nav a {
   text-decoration: none;
   color: black;
+}
+
+/* Top section styling */
+#top-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+
+#top-section img {
+}
+
+#top-section div {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  align-self: center;
+}
+
+#top-section h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+#top-section h4 {
+  font-size: 1.5rem;
+  font-weight: 100;
 }
