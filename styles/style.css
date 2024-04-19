@@ -23,8 +23,7 @@ White: #FFF
 /* General styling */
 body {
   font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
+  width: 100vw;
 }
 
 /* Header styling */
@@ -92,7 +91,6 @@ nav a {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border: 1px solid red;
   height: auto;
 }
 
@@ -134,4 +132,79 @@ nav a {
 #middle-section h1 span {
   border-bottom: 4px solid #00b172;
   padding: 8px 0;
+}
+
+/* Bottom section styling */
+#bottom-section {
+  background: #00b172;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: #fff;
+  margin: 3%;
+  padding: 3%;
+  height: auto;
+  text-align: center;
+  position: relative;
+}
+
+#bottom-section h1 {
+  width: 90%;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+#bottom-section h1 span {
+  border-bottom: 4px solid #fff;
+}
+
+#bottom-section h2 {
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+#bottom-section p {
+  font-weight: 100;
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 2rem;
+  width: 80%;
+}
+
+.right-container img {
+  width: 55%;
+}
+
+.middle-container img {
+  width: 9vw;
+}
+
+.bottom-section-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  width: 45%;
+}
+
+.middle-container {
+  width: 10%;
+}
+
+.right-container {
+  width: 45%;
 }
